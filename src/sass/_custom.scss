@@ -82,3 +82,20 @@
 		}
 	}
 }
+
+
+.icon.new-issue {
+	border: 1px solid #019851;
+    background: #019851;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 200ms;
+    &:hover {
+    	background: #109e13;
+    	box-shadow: 1px 1px 3px #ddd;
+    }
+}
