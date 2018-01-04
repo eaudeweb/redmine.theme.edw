@@ -1,7 +1,7 @@
+@import "custom-variables";
 @import "variables";
 @import "functions";
 @import "mixins";
-
 @import "lib/normalize";
 @import "lib/font-awesome";
 
@@ -51,3 +51,5 @@
 //
 
 @import "javascripts/sidebar-toggler";
+
+@import "custom.scss";

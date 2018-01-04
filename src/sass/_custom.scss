@@ -1,0 +1,84 @@
+@if $color-priorities {
+  // scss-lint:disable SpaceAfterComma
+  @include priority(".priority-lowest",   #fff,  $priority-lowest-text,  $priority-lowest-link);
+  @include priority(".priority-default",  #fff, $priority-default-text, $priority-default-link);
+  @include priority(".priority-high4",    #fff,   $priority-default-text, $priority-default-link);
+
+  @include priority(".priority-high3",    #fff,   $priority-default-text, $priority-default-link);
+  @include priority(".priority-high2",    #fff,   $priority-default-text, $priority-default-link);
+
+  @include priority(".priority-highest",  #fff, $priority-default-text, $priority-default-link);
+}
+
+
+.list.issues {
+// urgent
+	.priority-high3,
+	.priority-high2 {
+		td {
+			background: #ab0000;
+		}
+		color: white;
+		a {
+			color: white;
+			// font-weight: bold;
+		}
+	}
+
+// high
+	.priority-high4 {
+		td {
+			// background: #f32c2c;
+			background: rgba(255, 0, 0, 0.13);
+		}
+		a {
+			// font-weight: bold;
+		}
+	}
+
+// postponed
+	.priority-highest,
+	.priority-lowest {
+		td {
+			background: rgba(255,255,255,1);
+		}
+		color: rgba(0,0,0,0.6);
+		a {
+			color: rgba(0,0,0,0.6);
+		}
+		td.id {
+			a {
+				color: white;
+			}
+		}
+	}
+
+
+}
+
+
+.issue.details {
+	// urgent
+	&.priority-high3,
+	&.priority-high2 {
+		h3 {
+			color: #ab0000!important;
+		}
+	}
+
+// high
+	&.priority-high4 {
+		h3 {
+			color: #f32c2c;
+		}
+	
+	}
+
+// postponed
+	&.priority-highest,
+	&.priority-lowest {
+		h3 {
+			color: rgba(0,0,0,.6 );
+		}
+	}
+}
