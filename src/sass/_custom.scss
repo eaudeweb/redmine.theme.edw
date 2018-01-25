@@ -99,3 +99,13 @@
     	box-shadow: 1px 1px 3px #ddd;
     }
 }
+
+
+#principals_for_new_member {
+  #principals {
+    column-count: 6;
+  }
+  label {
+    display: block;
+  }
+}
