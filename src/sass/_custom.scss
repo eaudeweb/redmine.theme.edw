@@ -1,5 +1,6 @@
 #main > #content > .contextual > a.icon.new-issue {
   background: green;
+  // background: #ff9900; // InforMEA
   color: white;
   font-size: 1.3rem;
   border-radius: 4px;
@@ -10,6 +11,7 @@
   border: none;
   transition: all 200ms;
   &:hover {
+    // background: #cc7a00; // InforMEA
     background: #109e13;
     box-shadow: 1px 1px 3px #ddd;
   }
