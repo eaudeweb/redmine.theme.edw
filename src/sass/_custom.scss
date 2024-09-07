@@ -1,0 +1,59 @@
+#main > #content > .contextual {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+#main > #content > .contextual > .drdn {
+  order: 99;
+}
+
+#main > #content > .contextual > a.icon.new-issue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 100;
+  overflow: hidden;
+  transition: all 200ms;
+  // background: #ff9900; // InforMEA
+  border: none;
+  border-radius: 4px;
+  background: green;
+  color: white;
+  font-size: 1.3rem;
+  &::hover {
+    // background: #cc7a00; // InforMEA
+    background: #109e13;
+    box-shadow: 1px 1px 3px #ddd;
+  }
+  &::before {
+    font-size: 1rem;
+  }
+}
+
+// 6 columns for projects/settings/members
+#principals_for_new_member {
+  #principals {
+    column-count: 6;
+  }
+  label {
+    display: block;
+  }
+}
+
+
+#watchers {
+  > .watchers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    > li {
+      padding-right: 10px;
+      > img {
+        display: none;
+      }
+    }
+  }
+}
+
